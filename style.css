@@ -1,0 +1,80 @@
+/* Add some basic styles for the table */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.table-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; /* Add rounded corners to the table */
+    overflow: hidden; /* Hide overflow content due to rounded corners */
+}
+
+.responsive-table th, .responsive-table td {
+    border: 1px solid #7e5d5d;
+    padding: 8px;
+    text-align: left;
+}
+
+.responsive-table th {
+    background-color: #979797;
+}
+
+/* Add striped rows */
+.responsive-table tr:nth-child(even) {
+    background-color: #979797;
+}
+
+/* Add hover effect */
+.responsive-table tr:hover {
+    background-color: #7a6a6a;
+}
+
+/* Add depth effect on hover */
+.responsive-table tr:hover {
+    background-color: #7a6a6a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 480px) {
+    .responsive-table {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .responsive-table {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 320px) {
+    .responsive-table {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 280px) {
+    .responsive-table {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 240px) {
+    .responsive-table {
+        font-size: 6px;
+    }
+}
